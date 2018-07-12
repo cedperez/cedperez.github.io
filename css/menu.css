@@ -1,0 +1,106 @@
+.site-nav {
+	position: absolute;
+	background: transparent;
+	top: 4.5%;
+	right: 2%;
+	/*width: 200px;*/
+	width: 178px;
+	height: 0px;
+	overflow: hidden;
+}
+.site-nav-open {
+	height: auto;
+
+}
+.site-nav-icon {
+	display: inline-block;
+	font-size: 1.5em;
+	margin-right: 1em;
+	width: 1em;
+	text-align: right;
+/*	color: rgba(255, 255, 255, .3);*/
+}
+/*.icon-hover {
+	color: #000;
+}*/
+.site-nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.site-nav li {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.17);
+}
+.site-nav li:last-child {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.17);	
+}
+.site-nav a {
+	color: rgba(243, 243, 243, 0.56);
+	text-decoration: none;
+	font-family: 'Questrial', sans-serif;
+	display: block;
+	padding: 1em 1.5em;
+	text-transform: uppercase;
+	font-weight: 
+}
+.position-fixed {
+	position: fixed !important;
+	transition: all 0.4s ease-in-out;
+	right: 2%;
+	z-index: 1;
+
+}
+/*.nav-home:hover,
+.nav-work:hover,
+.nav-about:hover,
+.nav-contact:hover {
+	background: #e6e0f8;
+	color: #000;
+	letter-spacing: 2px;
+    transition: 0.3s ease-out;
+}*/
+.site-nav a:hover, 
+.site-nav a:focus {
+	background: #e6e0f8;
+	color: #000;
+	letter-spacing: 2px;
+    transition: 0.3s ease-out;
+}
+/* menu hamburger css */
+.menu-toggle {
+	padding: 1em;
+	position: absolute;
+	top: 1%;
+	right: 1%;
+	cursor: pointer;
+	z-index: 1;
+}
+.hamburger,
+.hamburger:before,
+.hamburger:after {
+	content: '';
+	display: block;
+	background-color: rgba(255, 255, 255, 0.68);
+	height: 3px;
+	width: 1.75em;
+	border-radius: 3px;
+	transition: all ease-in-out 500ms;
+}
+.hamburger:before{
+	transform: translateY(-6px);
+}
+.hamburger:after {
+	transform: translateY(3px);
+}
+/* when clicked whole hambuger turns 45 deg */
+.open .hamburger {
+	transform: rotate(45deg);
+}
+/* when clicked the first line of hamburger goes away */
+.open .hamburger:before {
+	opacity: 0;
+}
+/* when clicked last line of hamburger turns opposite of the second line */
+.open .hamburger:after {
+	transform: translateY(-3px) rotate(-90deg);
+}

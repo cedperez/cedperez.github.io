@@ -1,0 +1,118 @@
+*
+{
+	box-sizing: border-box;
+}
+.row:after, .row:before
+{
+	content: " ";
+	display: table;
+}
+.row:after
+{
+	clear: both;
+}
+
+/* columns are 66px and gutters are 16px */
+.span1
+{
+	width: 66px;
+}
+.span2
+{
+	width: 148px;
+}
+.span3
+{
+	width: 230px;
+}
+.span4
+{
+	width: 312px;
+}
+.span5
+{
+	width: 394px;
+}
+.span6
+{
+	width: 476px;
+}
+.span7
+{
+	width: 558px;
+}
+.span8
+{
+	width: 640px;
+}
+.span9
+{
+	width: 722px;
+}
+.span10
+{
+	width: 804px;
+}
+.span11
+{
+	width: 886px;
+}
+.span12
+{
+	width: 100%;
+}
+.column
+{
+	float: left;
+	margin-right: 16px;
+}
+.column:last-child
+{
+	margin-right: 0;
+}
+/* pushes are column width + margin */
+.push1
+{
+	margin-left: 82px;
+}
+.push2
+{
+	/* 66 + 16+ 66 +16 */
+	margin-left: 164px;
+}
+.push3
+{
+	margin-left: 246px;
+}
+.push4
+{
+	margin-left: 328px;
+}
+.push5
+{
+	margin-left: 410px;
+}
+.push6
+{
+	margin-left: 492px;
+}
+.push7
+{
+	margin-left: 574px; 
+}
+.push8
+{
+	margin-left: 656px;
+}
+.push9
+{
+	margin-left: 738px;
+}
+.push10
+{
+	margin-left: 820px;
+}
+.push11
+{
+	margin-left: 902px;
+}

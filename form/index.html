@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CheckOut</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<meta name="viewport" content="width=device.width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="Styles/reset.css">
+	<link rel="stylesheet" type="text/css" href="Styles/style.css">
+	<link rel="stylesheet" type="text/css" href="Styles/forms.css">
+	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+
+	<!-- [if IE]
+		<script type="text/javascript" src="Scripts/html5shiv.js"></script>
+	<![endif] -->
+</head>
+<body>
+	<header>
+		<h1>CHECKOUT</h1>
+	</header>
+	<div class="blankSpace"></div>
+	<main>
+		<div class="wrapper">
+			<div class="log">
+				<p><span class="i">i</span>Returning Customer?<span class="logIn"> Click here to log in</span></p>
+			</div>
+			<div class="alert">
+				<h3>If you have shopped with us before.please enter your details in the boxes below.If you are new customer pleaseproceed to the Billing & Shipping section.</h3>
+			</div>
+			<div class="theForm">
+				<form method="get">
+					<div class="row">
+						<table>
+							<tr>
+								<td>
+									<label for="username">Username or email*</label>
+								</td>
+								<td>
+									<label for="password">Password*</label>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input type="text" id="username" name="username">
+								</td>
+								<td>
+									<input type="text" id="password" name="password">
+								</td>
+							</tr>
+						</table>
+						<div class="loginDiv">
+							<input type="button" value="LOGIN">
+						</div>
+						<div class="loginDivButton">
+							<input type="checkbox" id="checkbox" name="checkbox">
+							<label for="checkbox">Remember me</label>
+						</div>
+					</div>
+					<p style="color: #000000; padding-top: 10px; font-weight: bold;">Lost your password?</p>
+				</form>
+			</div>
+
+			<div class="log">
+				<p><span class="i">i</span>Have a coupon? <a href="" style="text-decoration: none;">Click here to log in</a></p>
+			</div>
+			<div class="couponBox">
+				<form method="get">
+					<input type="text" id="couponCode" name="couponCode" placeholder="Coupon Code" style="border-color: #000000;">
+					<input type="submit" value="APPLY COUPON">
+				</form>
+			</div>
+			<div class="row">
+				<form method="get">
+					<div class="billingSection">
+						<div class="billingHeader">BILLING DETAILS<hr></div>
+						<table>
+							<tr>
+								<td colspan="2">Country*</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<select name="country" id="country">
+										<option value="Canada">Canada</option>
+										<option value="Cambodia">Cambodia</option>
+										<option value="Chile">Chile</option>
+										<option value="Dubai">Dubai</option>
+										<option value="Denmark">Denmark</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<label for="fName">First Name*</label>
+								</td>
+								<td>
+									<label for="lName">Last Name*</label>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input type="text" id="fName" name="fName">
+								</td>
+								<td>
+									<input type="text" id="lName" name="lName">
+								</td>
+							</tr>
+							<tr>
+						  		<td colspan="2">
+						  			<label for="cname">Company Name*</label>
+						  		</td>
+					  		</tr>
+						  	<tr>
+						  		<td colspan="2">
+						  			<input type="text" id="cname" name="cname">
+						  		</td>
+						  	</tr>
+						  	<tr>
+						  		<td>
+						  			<label for="address">Address*</label>
+						  		</td>
+						  		<td>
+						  		</td>
+						  	</tr>
+						  	<tr>
+						  		<td colspan="2">
+						  			<input type="text" id="address" name="address" placeholder=" Street adress">
+						  		</td>
+						  	</tr>
+						  	<tr>
+						  		<td colspan="2">
+						  			<input type="text" id="address2" name="address" placeholder=" Apartment suite.unit etc.(optional)">
+						  		</td>
+						  	</tr>
+						  	<tr>
+						  		<td colspan="2">
+						  			<label for="townCity">Town / City*</label>
+						  		</td>
+						  	</tr>
+						  	<tr>
+						  		<td colspan="2">
+						  			<input type="text" id="townCity" name="townCity" placeholder="townCity">
+						  		</td>
+						  	</tr>
+						  	<tr>
+						  		<td>
+						  			<label for="province">Province*</label>
+						  		</td>
+						  		<td>
+						  			<label for="postalCode">Postalcode*</label>
+						  		</td>
+						  	</tr>
+						  	<tr>
+						  		<td class="space">
+						  			<select name="province" id="province">
+							  	  		<option value="0">Select an option...</option>
+							  	  		<option value="AB">alberta</option>
+							  	  		<option value="MB">Manitoba</option>
+							  	  		<option value="SK">Saskatchewan</option>
+							  	  		<option value="BC">British Columbia</option>
+							  	  		<option value="ON">Ontario</option>
+							  	  		<option value="QC">Quebec</option>
+						  	  		</select>
+						  		</td>
+						  		<td>
+						  			<input type="text" id="postalCode" name="postalCode" placeholder=" Postcode/Zip">
+						  		</td>
+						  	</tr>
+						  	<tr>
+						  		<td>
+						  			<label for="email">Email Address*</label>
+						  		</td>
+						  		<td>
+						  			<label for="phone">Phone*</label>
+						  		</td>
+						  	</tr>
+						  	<tr>
+							  	<td class="space">
+							  		<input type="text" id="email" name="email">
+							  	</td>
+							  	<td>
+							  		<input type="text" id="phone" name="phone">
+							  	</td>
+						  	</tr>
+						  	<tr>
+						  		<td>
+						  			<input type="checkbox" id="checkbox1" name="checkbox">
+									<label for="checkbox1">Create an account?</label>
+						  		</td>
+						  		<td>
+						  		</td>
+						  	</tr>
+						</table>
+						<div class="billingHeader">SHIPPING ADDRESS<hr></div>
+						<input type="checkbox" id="checkbox2" name="checkbox">
+						<label for="checkbox2"><span class="shippingText">Ship to a different address? an account?</span></label>
+						<div class="orderNotes">
+							<label>Order Notes</label>
+						</div>
+						<div>
+							<textarea id="orderText" name="OrderNotes" placeholder="Notes about your order.e.g.special notes for delivery"></textarea>
+						</div>
+					</div>
+					<div class="orderSection">
+						<div class="orderWrapper">
+							<div class="yourOrder">
+								<label class="order">Your Order</label>
+								<div class="line">
+									<hr>
+								</div>
+							</div>
+
+							<div class="yourProduct">
+								<label>Product</label>
+								<label class="floatRight">TOTAL</label>
+
+							</div>
+							<div class="yourDress">
+								<label>NICE DRESS <span class="x1"style=> x 1</span></label>
+							</div>
+							<div class="yourSubtotal">
+								<label>Cart Subtotal</label>
+							</div>
+							<div class="yourShipping">
+								<label class="ship">SHIPPING AND <br>HANDLING</label>
+								<label class="floatRight">Free Shipping</label>
+							</div>
+							<div class="yourOrderTotal">
+								<label>ORDER TOTAL</label>
+							</div>
+							<div class="yourPayment">
+								<label class="order">Payment Method</label>
+								<div class="line2"><hr></div>
+							</div>
+							<div class="option1">
+								<input type="radio" id="option" name="option">
+								<label for="option" class="paymentOption">Direct Bank Transfer</label>
+							</div>
+							<div class="desc">
+								<label class="description">Make your payment directly into our bank account. Please use your order ID as the payment reference. Your order won't be shippeduntil the funds have cleared in our account</label>
+							</div>
+							<div class="option2">
+								<input type="radio" id="option2" name="option">
+								<label for="option" class="paymentOption">Cheque payment</label>
+							</div>
+							<div class="option3">
+								<input type="radio" id="option3" name="option">
+								<label for="option" class="paymentOption">Paypal</label>	
+								<fieldset>
+									<legend><img src="Images/cards.jpg" alt="cards"></legend>
+									<img src="Images/pay-pal.jpg" alt="pay-pal">
+								</fieldset>
+							
+								<label class="paypal?">What is PayPal?</label>							
+							</div>
+					
+							
+							<div class="submitOrder">
+								<input type="submit" value="PLACE ORDER">
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</main>		
+	<footer></footer>
+</body>
+</html>

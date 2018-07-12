@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Poppins:300,400|Questrial|Raleway');
+
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+}
+/* load icon */
+
+/* particle css */
+#particle {
+	background-color: black;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 0;
+}
+
+/* content overlay css */
+#overlay {
+	position: relative;
+	/*background-color: rgba(19, 55, 87, 0.5);*/
+	background-color: rgba(14, 42, 67, 0.5);
+}
+/* menu */
+.toggle-menu {
+	position: fixed;
+	padding: 15px 20px 15px 15px;
+	margin-top: 20px;
+	cursor: pointer;
+	background-color: #3eabea;
+	z-index: 1000000;
+	font-size: 2em;
+	opacity: 0;
+}
+
+/*
+	====================
+	SIDEBAR MENU SECTION
+	====================
+*/
+.sidebar-menu {
+	position: fixed;
+	width: 250px;
+	margin-left: 0px;
+	overflow: hidden;
+	height: 100vh;
+	max-height: 100vh;
+	background-color: rgba(17,17,17, 0.9);
+	opacity: 0.9;
+	transition: all 0.4s ease-in-out;
+}
+.fa-times {
+	right: 10px;
+	top: 10px;
+	opacity: 0.7;
+	cursor: pointer;
+	position: absolute;
+	color: white;
+	transition: all 0.4s ease-in-out;
+}
+.fa-times:hover {
+	opacity: 1;
+}
+.box-item {
+	font-family: 'Open Sans';
+	font-weight: 200;
+	padding: 10px 20px;
+	display: inline-block;
+	border: solid 2px white;
+	box-sizing: border-box;
+	font-size: 22px;
+	color: white;
+	text-align: center;
+	margin-top: 70px;
+}
+.logo-bold {
+	font-weight: 800;
+}
+.logo-title {
+	font-family: 'Open Sans';
+	font-weight: 200;
+	font-size: 12px;
+	text-align: center;
+	padding: 5px 0;
+	color: white;
+}
+#navigation-selection {
+	margin: 20px 0;
+	display: block;
+	width: 200px; 
+	margin-left: 25px;
+}
+.navigation-item {
+	font-weight: 200;
+	font-family: 'Open Sans';
+	color: white;
+	padding: 12px 0;
+	box-sizing: border-box;
+	font-size: 14px;
+	color: #d8d8d8;
+	border-bottom: solid 1px #d8d8d8;
+	transition: all 0.4s ease-in-out;
+	cursor: pointer;
+
+}
+.boxed_item_smaller {
+	font-size: 12px;
+	color: #d8d8d8;
+	width: 200px;
+	transition: all 0.4s ease-in-out;
+	border-width: 1px;
+	margin: 0 0 20px 0;
+}
+.boxed_item_smaller:hover {
+	background-color: white;
+	color: #111;
+} 
+.hide-menu {
+	margin-left: -300px; /* should be the same size as the width of the menu*/
+}
+.opacity-one {
+	opacity: 1;
+	transition: all 0.6s ease-in-out;
+}
+.intro {
+	height: 100%;
+	width: 100%;
+	margin: auto;
+/*	background-color: black;*/
+	display: table;
+	top: 0;
+/*	background-size: cover;*/
+}
+.intro .inner {
+	display: table-cell;
+	vertical-align: middle;
+	width: 100%;
+	max-width: none;
+}
+.inner-content {
+	max-width: 500px;
+	text-align: center;
+	margin: 0 auto;
+	top: 50%;
+}
+.inner-content h1 {
+	font-family: 'Questrial', sans-serif;
+	color: #fff;
+	font-size: 250%;
+    font-weight: 100;
+}
+.inner-content p {
+	color: #fff;
+	opacity: 0.5;
+	font-weight: 100;
+}
+.skill-tag {
+	color: #40cc39;
+}
+.welcome-info {
+	font-family: 'Questrial', sans-serif;
+	font-size: 150%;
+	color: #fff;
+    opacity: 0.5;
+}
+.welcome-info a {	    
+	text-decoration: none;
+    color: #7ab5ff;
+}
+}
+.welcome-divide {
+    color: #fff;
+    opacity: 0.5;
+}
+.btn {
+	border-radius: 2px;
+    font-weight: 400;
+	font-family: 'Poppins', sans-serif;
+	color: #e6e4ec;
+	text-decoration: none;
+	text-transform: uppercase;
+    transition: background-color 0.3s ease, color 0.3s ease;
+	padding: 6px 25px;
+	border: 1px solid rgba(238,232,255,0.57);
+	background-color: transparent;
+}
+.btn:hover {
+    background-color: #e6e0f8;
+    color: #000;
+    letter-spacing: 2px;
+    transition: 0.3s ease-out;
+}
+/* contact me css*/
+.glass-window {
+	width: 400px;
+    background-color: rgba(214, 209, 209, 0.05);
+    height: 400px;
+    margin: 0 auto;
+    border-radius: 1.5px;
+    border: 1px solid rgba(255, 255, 255, 0.07);
+}
+.fa-white {
+	font-size: 280% !important;
+    color: rgba(255, 255, 255, 0.26);
+
+}
+.fa-white:hover {
+	color: white;
+	transition: all 0.4s ease-in-out;
+}
+/* work css*/
+#work>a:hover {
+	cursor: pointer;
+}
+/* wim demo css */
+.demo {
+	width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    color: #fff;
+}
+.demo>h2 {
+	font-weight: 400;
+	font-size: 200%;
+	letter-spacing: 2px;
+}
+/*.demo>p {
+	color: rgba(255,255,255, 0.5);
+}*/
+.hidden {
+	display: none;
+}
+span.creator {
+	color: rgba(255,255,255, 0.5);
+	letter-spacing: 2px;
+}
+.demo p {
+	text-transform: uppercase;
+}
+.demo>p>a {
+	text-decoration: none;
+    color: rgba(255,255,255, 0.5);
+    letter-spacing: 2px;
+}
+.demo>img {
+	max-width: 100%;
+}
+.demo>p>a:hover {
+	color: #a3d7ff;
+	transition: all 0.4s;
+}
+
+/* ******************** media query ******************** */
+/* #### iPhone 6 and 6 plus Portrait or Landscape #### */
+@media only screen and (max-width: 500px) {
+	.btn-edit {
+		display: block;
+	}
+	.site-nav li {
+    background-color: rgb(0, 0, 0);
+	}
+}
+
+/* adding padding to the content on mobile view*/
+@media (max-width: 768px) {
+	.inner {
+		padding: 0 1.2rem;
+	}
+}
