@@ -253,7 +253,9 @@ span.creator {
 	color: #a3d7ff;
 	transition: all 0.4s;
 }
-
+.hash {
+	opacity: 1 !important;
+}
 /* ******************** media query ******************** */
 /* #### iPhone 6 and 6 plus Portrait or Landscape #### */
 @media only screen and (max-width: 500px) {
