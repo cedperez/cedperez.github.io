@@ -10,7 +10,7 @@ html, body {
 
 /* particle css */
 #particle {
-	background-color: black;
+	background-color: #600684;
 	position: fixed;
 	top: 0;
 	right: 0;
@@ -155,7 +155,7 @@ html, body {
 }
 .inner-content p {
 	color: #fff;
-	opacity: 0.5;
+	opacity: 1;
 	font-weight: 100;
 }
 .skill-tag {
@@ -165,7 +165,7 @@ html, body {
 	font-family: 'Questrial', sans-serif;
 	font-size: 150%;
 	color: #fff;
-    opacity: 0.5;
+    opacity: 1;
 }
 .welcome-info a {	    
 	text-decoration: none;
